@@ -1,0 +1,6 @@
+[env:custom_build]
+extends = env:esp32s3_4M_qspi
+build_flags = ${env:esp32s3_4M_qspi.build_flags} ${esp32.AR_build_flags}
+lib_deps = 
+  ${env:esp32s3_4M_qspi.lib_deps}
+  ${esp32.AR_lib_deps}
